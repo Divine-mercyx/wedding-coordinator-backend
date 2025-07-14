@@ -48,11 +48,9 @@ const seedDatabase = async () => {
         await mongoose.connect(process.env.MONGO_URI);
         console.log('Connected to MongoDB Atlas');
 
-        // Clear existing data
         await Coordinator.deleteMany();
         console.log('Cleared existing coordinators');
 
-        // Insert new data
         await Coordinator.insertMany(coordinators);
         console.log('Successfully seeded coordinators');
 
