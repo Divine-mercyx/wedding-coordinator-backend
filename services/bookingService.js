@@ -2,13 +2,13 @@ import Booking from '../models/Booking.js';
 import Coordinator from '../models/Coordinator.js';
 
 export const createBookingService = async (bookingData) => {
-    const coordinator = await Coordinator.findById(bookingData.coordinator);
+    const coordinator = await Coordinator.findById(bookingData.coordinatorId);
     if (!coordinator) {
         throw new Error('Coordinator not found');
     }
 
     const { isAvailable } = await checkAvailabilityService(
-        bookingData.coordinator,
+        bookingData.coordinatorId,
         bookingData.weddingDate
     );
 
