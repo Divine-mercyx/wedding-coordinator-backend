@@ -8,7 +8,7 @@ const coordinators = [
     {
         name: 'Sarah Johnson',
         email: 'sarah@example.com',
-        profilePic: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300',
+        profilePhoto: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300',
         bio: 'Experienced wedding coordinator with a passion for creating unforgettable events.',
         price: 1500,
         location: 'New York, USA',
@@ -20,7 +20,7 @@ const coordinators = [
     {
         name: 'Michael Chen',
         email: 'michael@example.com',
-        profilePic: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300',
+        profilePhoto: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300',
         bio: 'Detail-oriented coordinator specializing in luxury weddings.',
         price: 2000,
         location: 'Los Angeles, USA',
@@ -32,7 +32,7 @@ const coordinators = [
     {
         name: 'Emma Wilson',
         email: 'emma@example.com',
-        profilePic: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300',
+        profilePhoto: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300',
         bio: 'Creative and organized coordinator with a focus on personalized weddings.',
         price: 1800,
         location: 'Chicago, USA',

@@ -13,6 +13,6 @@ coordinatorRouter
 
 coordinatorRouter
     .route('/:id/check-availability')
-    .get(checkAvailability);
+    .post(checkAvailability);
 
 export default coordinatorRouter;
