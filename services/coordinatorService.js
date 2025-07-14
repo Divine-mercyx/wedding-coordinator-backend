@@ -2,7 +2,6 @@ import Coordinator from '../models/Coordinator.js';
 import ApiFeatures from '../utils/apiFeatures.js';
 
 export const getAllCoordinatorsService = async (queryStr) => {
-    // Filtering, sorting, pagination
     const features = new ApiFeatures(Coordinator.find(), queryStr)
         .filter()
         .sort()

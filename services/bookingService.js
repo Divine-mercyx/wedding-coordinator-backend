@@ -24,7 +24,6 @@ export const getBookingsService = async (query = {}) => {
 };
 
 export const checkAvailabilityService = async (coordinatorId, date) => {
-    // Check if coordinator has availability on this date
     const coordinator = await Coordinator.findById(coordinatorId);
     if (!coordinator) {
         throw new Error('Coordinator not found');
@@ -34,7 +33,6 @@ export const checkAvailabilityService = async (coordinatorId, date) => {
         a => a.date.toISOString() === new Date(date).toISOString()
     );
 
-    // Check if there's already a booking for this date
     const existingBooking = await Booking.findOne({
         coordinator: coordinatorId,
         weddingDate: date
